@@ -17,7 +17,7 @@ const LandingPage = () => {
           alignItems: "center"
         }}
       >
-        <Link to="/dashboard" style={{textDecoration:'none'}}> Dashboard</Link>
+        <Link to="/dashboard" style={{ textDecoration: 'none' }}> Dashboard</Link>
       </div>
     </div>
   );
