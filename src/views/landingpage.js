@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <div className="App">
-      <h1>Gannon's Cognito Auth Demo App</h1>
+      <h1>Public Landing Page</h1>
       <div
         style={{
           display: "flex",
@@ -17,7 +17,12 @@ const LandingPage = () => {
           alignItems: "center"
         }}
       >
-        <Link to="/dashboard" style={{ textDecoration: 'none' }}> Dashboard</Link>
+        <button>
+          <Link to="/userdashboard" style={{ textDecoration: 'none' }}> User Dashboard</Link>
+        </button>
+        <button>
+          <Link to='/admindashboard' styple={{ textDecoration: 'none' }}> Admin Dashboard</Link>
+        </button>
       </div>
     </div>
   );

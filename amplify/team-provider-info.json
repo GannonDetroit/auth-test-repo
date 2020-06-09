@@ -16,6 +16,12 @@
                 "nexienttesteea19d72": {
                     "hostedUIProviderCreds": "[]"
                 }
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d1tzf1b8s9i7lu",
+                    "type": "cicd"
+                }
             }
         }
     }
