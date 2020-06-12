@@ -11,9 +11,11 @@ function App() {
   return (
     <Router>
       <Switch>
+
         <Route exact path="/">
           <LandingPage />
         </Route>
+
         <Route exact path="/userdashboard">
           <UserDashboard />
         </Route>
@@ -21,7 +23,6 @@ function App() {
         <Route exact path="/admindashboard">
           <AdminDashboard />
         </Route>
-
 
       </Switch>
     </Router>

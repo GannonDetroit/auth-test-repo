@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/info",
+            "lambdaFunction": "NexientTestAPIInfo",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "NexientTestAPI",
+    "apiName": "NexientTestAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "NexientTestAPIInfo"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-nexienttest-dev-134815-authRole",
+        "unAuthRoleName": "amplify-nexienttest-dev-134815-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "NexientTestAPIInfo",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
